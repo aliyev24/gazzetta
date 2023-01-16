@@ -1,0 +1,12 @@
+# created by virtualenv automatically
+__pycache__
+db.sqlite3
+/venv
+.env
+.idea
+**/migrations/**
+!**/migrations
+!**/migrations/__init__.py
+
+!*media/.gitkeep
+media/*

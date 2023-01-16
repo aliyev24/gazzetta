@@ -1,0 +1,39 @@
+{% extends 'main.html' %}
+{% block content%}
+
+<body>
+<section class="p-5">
+    <div class="container">
+
+<div class="row">
+
+
+
+
+  <div class="col-sm-12">
+    <table class="table table-bordered ms-auto" style=" width:300px ">
+    <thead >
+      <tr>
+        <th>All News on {{category.title}}</th>
+
+      </tr>
+    </thead>
+    <tbody>
+    {% for post in category.posts.all %}
+      <tr>
+        <td><a style = 'color: #0060B6;
+    text-decoration: none; ' href="{{post.get_absolute_url}}">{{post.title}}</a></td>
+
+      </tr>
+    {% endfor%}
+    </tbody>
+  </table>
+  </div>
+
+</div>
+      </div>
+</section>
+</body>
+
+
+{% endblock content%}

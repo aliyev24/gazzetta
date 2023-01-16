@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+
+
+<form method="get">
+        {{ filter.form.as_p }}
+        <input type="submit"  />
+    </form>
+    {% for obj in filter.qs %}
+        <a style = 'color: #0060B6;
+    text-decoration: none; 'href="{{ obj.get_absolute_url}}" >{{ obj.title }}</a>
+         <br />
+    {% endfor %}
+{% endblock %}

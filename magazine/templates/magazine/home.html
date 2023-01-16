@@ -1,0 +1,73 @@
+{% extends 'main.html' %}
+{% block content%}
+
+
+<section class="p-4">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-8">
+            <div class="card bg-dark text-light"   >
+            {% for post in posts2 %}
+                {% if post.is_main %}
+
+                <img class="card-img-top  img-fluid-responsive " style="height:350px" src="{{post.photo.url}}" alt="Card image">
+
+  <div class="card-body">
+    <h4 class="card-title">{{post.title}}</h4>
+    <p class="card-text">{{post.title}}</p>
+    <a href="{{post.get_absolute_url}}" class="btn btn-primary">Read the article</a>
+  </div>
+
+               {% endif %}
+                {% endfor %}
+
+            </div>
+            </div>
+            <div class="col-4">
+                 <table class="table table-bordered ms-auto" >
+    <thead >
+      <tr>
+        <th>Last news</th>
+
+      </tr>
+    </thead>
+    <tbody>
+    {% for post in posts%}
+      <tr>
+        <td><a style = 'color: #0060B6;
+    text-decoration: none; ' href="{{post.get_absolute_url}}">{{post.title}}</a></td>
+
+      </tr>
+    {% endfor%}
+    </tbody>
+  </table>
+</br>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</br>
+<section class="p-5">
+    <div class="container">
+        <div class="row text-center">
+            {% for post in posts1 %}
+             {% if  post.is_published %}
+            <div class="col">
+            <div class="card bg-dark text-light"  >
+        <img class="card-img-top  img-fluid-responsive" style="height:225px"  src="{{ post.photo.url }}" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{post.title}}</h4>
+    <p class="card-text">{{post.title}}</p>
+    <a href="{{ post.get_absolute_url}}" class="btn btn-primary">Read Article</a>
+  </div>
+            </div>
+            </div>
+             {% else %}
+            {% endif %}
+            {% endfor %}
+</section>
+
+{% endblock %}
