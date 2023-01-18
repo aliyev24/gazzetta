@@ -54,7 +54,7 @@ python -m pip install -r requirements.txt
 ```
 python manage.py makemigrations
 ```
-8.Run
+8. Run
 
 ```
 python manage.py migrate
