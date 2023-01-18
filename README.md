@@ -2,6 +2,7 @@
 
 - Posts
 - Categories
+- Search
 - Tags
 - Registration and Authentication
 
