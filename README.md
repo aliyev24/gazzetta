@@ -35,6 +35,7 @@ python -m pip install -r requirements.txt
 6.  Create '.env' file in settings root and paste this:
 
 root=true
+
 SECRET_KEY=password from Djescrety
 DB_NAME=your_db_name_created
 DB_USER=your_db_user
@@ -42,13 +43,19 @@ DB_PASSWORD=your_password
 DB_HOST=localhost
 DB_PORT=5432
 
-7. Run ```
+7. Run
+
+```
 python manage.py makemigrations
 ```
-8.Run```
+8.Run
+
+```
 python manage.py migrate
 ```
-9. Run```
+9. Run
+
+```
 python manage.py runserver
 ```
 
