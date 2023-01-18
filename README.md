@@ -30,6 +30,7 @@ python -m pip install -r requirements.txt
 
 4. Create Postgres database.
 
+
 5. Go to [Djescrety](https://djecrety.ir/) generate secret key and copy it.
 
 
