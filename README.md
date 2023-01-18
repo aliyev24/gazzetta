@@ -35,6 +35,7 @@ python -m pip install -r requirements.txt
 
 6. Create '.env' file in settings root and paste this:
 
+ ```
    root=true
  
    SECRET_KEY=password from Djescrety
@@ -48,6 +49,7 @@ python -m pip install -r requirements.txt
    DB_HOST=localhost
 
    DB_PORT=5432
+   ```
 
 7. Run
 
