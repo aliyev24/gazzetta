@@ -33,21 +33,21 @@ python -m pip install -r requirements.txt
 5. Go to [Djescrety](https://djecrety.ir/) generate secret key and copy it.
 
 
-6.  Create '.env' file in settings root and paste this:
+6. Create '.env' file in settings root and paste this:
 
-root=true
+   root=true
+ 
+   SECRET_KEY=password from Djescrety
 
-SECRET_KEY=password from Djescrety
+   DB_NAME=your_db_name_created
 
-DB_NAME=your_db_name_created
+   DB_USER=your_db_user
 
-DB_USER=your_db_user
+   DB_PASSWORD=your_password
 
-DB_PASSWORD=your_password
+   DB_HOST=localhost
 
-DB_HOST=localhost
-
-DB_PORT=5432
+   DB_PORT=5432
 
 7. Run
 
