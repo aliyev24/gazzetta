@@ -6,11 +6,16 @@
 - Tags
 - Registration and Authentication
 
-# Requirements
+_ _ _ _ _ _ _ _ _ _ _
 
-* Python 3.9 and up
+### Build with
+* Django 4.1.5
+* Bootstrap 5
+* Postgres 14
 
-# Installation 
+_ _ _ _ _ _ _ _ _ _ _
+
+### Installation
 
 1. Create virtual environment:
 
@@ -32,10 +37,7 @@ python -m pip install -r requirements.txt
 4. Create Postgres database.
 
 
-5. Go to [Djescrety](https://djecrety.ir/) generate secret key and copy it.
-
-
-6. Create '.env' file in settings root and paste this:
+5. Create '.env' file in settings root and paste this:
 
  ```
    root=true
@@ -52,25 +54,3 @@ python -m pip install -r requirements.txt
 
    DB_PORT=5432
    ```
-
-7. Run
-
-```
-python manage.py makemigrations
-```
-8. Run
-
-```
-python manage.py migrate
-```
-9. Run
-
-```
-python manage.py runserver
-```
-
-
-# Build with
-* Django 4.1.5
-* Bootstrap 5
-* Postgres 14
